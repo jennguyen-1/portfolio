@@ -1,7 +1,558 @@
 * {
     box-sizing:border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body {
+    /* overflow-x: scroll; */
+    overflow-y: hidden;
 }
 
 img {
     max-width:100%;
+}
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+    /* font-family:'Times New Roman', Times, serif; */
+    font-size: 60px;
+    letter-spacing: -3px;
+}
+
+.h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.bodyhead {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+.bodytext {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: -.9px;
+}
+
+.container{
+    width: 11100px;
+    height: 100vh;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    flex-direction: row;
+}
+
+.intro{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.intro img {
+    height: 100vh;
+    display: block;
+}
+
+.introtext {
+height: 100vh;
+width: 200px;
+margin-left: -525px;
+margin-top: 285px;
+text-align: center;
+display: flex;
+align-content: center;
+}
+
+.baby {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: -10px;
+    margin-top: -200px;
+    z-index: 1;
+     rotate: -30deg;
+    /* background: orange; */
+}
+
+.babypic {
+    width: 400px;
+}
+
+.one {
+display: flex;
+flex-direction: column;
+height: 100vh;
+overflow: hidden;
+}
+
+.one img {
+    height: 100vh;
+}
+
+.two {
+    height: 100vh;
+}
+
+.two img {
+    height: 100vh;
+}
+
+.three {
+    /* background: lightskyblue; */
+    width: 700px;
+    margin-left: 15px;
+}
+
+.three .in1 {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100vh;
+    /* background: pink; */
+}
+
+.three .in2 {
+    flex-basis: 20%;
+    /* background: lightgreen; */
+    margin-top: 20px;
+}
+
+.three .in2 .h2 {
+    margin-left: 60px;
+}
+
+.three .in3 {
+/* background: lightgrey; */
+flex-basis: 80%;
+display: flex;
+flex-direction: row;
+min-height: 0
+}
+
+.three .in4 {
+/* background: purple; */
+flex-basis: 70%;
+min-height: 0;
+
+display: flex;
+align-items: stretch;
+}
+
+.three .in4 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 0
+}
+
+.three .in5 {
+/* background: yellow; */
+flex-basis: 30%;
+padding-left:10px;
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding-bottom: 20px;
+}
+
+.button1 {
+    background: url(myimages/button-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+}
+
+.button1:hover {
+    background: url(myimages/button-02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  height: 80%;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  overflow-y: scroll;
+  /* -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s */
+}
+
+/* Add Animation
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+} */
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #f09ebc;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+
+.girlindent {
+    margin-left: 20px;
+}
+
+
+.four {
+    /* background: rgb(200, 238, 144); */
+    height: 100vh;
+    width: 600px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.four .in4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.four .in1 {
+    margin-left: 30px;
+}
+
+.girlsite1 img{
+border-radius: 5px;
+box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.42);
+}
+
+.four .in2 {
+    background: url(myimages/button3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1000px;
+}
+
+.four .in2:hover{
+    background: url(myimages/button4.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1000px;
+}
+
+.five {
+    width: 300px;
+    margin-left: 40px;
+    /* background: greenyellow; */
+}
+
+.five .bodytext {
+    margin-left: 20px;
+}
+
+.six {
+    width: 350px;
+    /* background: rgba(255, 192, 203, 0.349); */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-left: -100px;
+    margin-top: 100px;
+}
+
+.six .bodyhead {
+    margin-left: 60px;
+    margin-bottom: 2px;
+}
+
+.six .in1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.six .in1 img {
+    height: 200px;
+}
+
+.six .in2 {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.seven {
+    /* background: lavender; */
+    height: 100vh;
+}
+
+.seven img {
+    height: 100vh;
+}
+
+.eight {
+    height: 100vh;
+    margin-left: -80px;
+}
+
+.eight img {
+    height: 100vh;
+}
+
+.nine{
+    height: 100vh;
+    margin-left: -100px;
+    margin-top: 250px;
+    rotate: -10deg;
+}
+
+.nine img {
+    height: 50vh;
+}
+
+
+.ten {
+    width: 800px;
+    /* background: palevioletred; */
+    margin-left: -150px;
+}
+
+.ten .in1 .h2 {
+    margin-left: 50px;
+}
+
+.ten .in1 .line2 {
+    margin-left: 100px;
+}
+
+.eleven {
+    display: flex;
+    flex-direction: row;
+    /* background: rgba(173, 216, 230, 0.323); */
+    margin-left: -625px;
+    margin-top: 150px;
+}
+
+.eleven img {
+    width: 350px;
+    margin: 10px;
+}
+
+.twelve {
+    background: gold;
+    height: 100vh;
+    margin-left: 100px;
+}
+
+.twelve .in1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.twelve img {
+    height: 100vh;
+}
+
+.thirteen {
+    /* background: rgba(0, 0, 255, 0.097); */
+    width: 500px;
+    margin-left: -1100px;
+    margin-top: 50px;
+}
+
+.fourteen {
+    /* background: rgba(128, 0, 128, 0.131); */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 300px;
+    margin-bottom: 240px;
+}
+
+.fourteen img {
+    width: 200px;
+    mix-blend-mode: multiply;
+}
+
+.fourteen p {
+    width: 105px;
+    margin-left: 120px;
+    margin-top:-235px;
+}
+
+.fifteen {
+    height: 100vh;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.fifteen img {
+    height: 80vh;
+}
+
+.sixteen {
+    margin-left: 20px;
+}
+
+.sixteen .h2 {
+    margin-left: 150px;
+}
+
+.seventeen {
+    /* background: lightgoldenrodyellow; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: -722px;
+    margin-top: 100px;
+}
+
+
+.seventeen img {
+   width: 300px;
+}
+
+.eighteen {
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 200px;
+}
+
+.eighteen img {
+    width: 300px;
+}
+
+.nineteen {
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    rotate: 20deg;
+}
+
+.nineteen img {
+    width:300px;
+}
+
+.twenty {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: -280px;
+}
+
+.twenty img {
+    width: 900px;
+}
+
+.twentyone {
+    width: 180px;
+    margin-left: -100px;
+    margin-top: 20px;
+}
+
+.twentytwo {
+    height: 100vh;
+    margin-left: 30px;
+
+}
+
+.twentytwo img {
+    height: 100vh;
+}
+
+.twentythree {
+    /* background: pink; */
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.twentyfour {
+    /* background: red; */
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 150px;
+    margin-bottom: 20px;
+    margin-left: -450px;
+}
+
+.twentyfour div {
+    width: 100px;
+    margin:5px;
+}
+
+.end {
+    /* background:pink; */
+    width: 700px;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
