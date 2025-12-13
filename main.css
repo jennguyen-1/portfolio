@@ -13,6 +13,38 @@ img {
     max-width:100%;
 }
 
+.navwrap {
+    position: fixed;
+    left:0;
+    width: 100vw;
+    z-index: 5;
+}
+
+/* nav bar */
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* background-color: #333333; */
+  display: flex;
+  justify-content: center;
+}
+
+ul.nav li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+  color: rgb(4, 4, 4);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover {
+  text-shadow: rgba(0,0,0,0.71) 0px 0px 1px;
+}
+
+
+
 .heading {
     font-family: Arial, Helvetica, sans-serif;
     /* font-weight: bold; */
@@ -27,7 +59,7 @@ img {
     letter-spacing: -1px;
 }
 
-ul {
+.in5 .ul {
     padding-left: 20px;
 }
 
@@ -76,6 +108,9 @@ margin-top: 285px;
 text-align: center;
 display: flex;
 align-content: center;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: -1px;
+color: #d74e87;
 }
 
 .baby {
@@ -94,6 +129,8 @@ align-content: center;
 .babypic {
     width: 400px;
 }
+
+
 
 .one {
 display: flex;
@@ -345,6 +382,7 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.42);
 .seven {
     /* background: lavender; */
     height: 100vh;
+    width:auto;
 }
 
 .seven img {
@@ -375,7 +413,8 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.42);
 .ten {
     width: 800px;
     /* background: palevioletred; */
-    margin-left: -150px;
+    margin-left: -255px;
+    margin-top: 40px;
 }
 
 .ten .in1 .h2 {
@@ -400,9 +439,8 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.42);
 }
 
 .twelve {
-    background: gold;
     height: 100vh;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .twelve .in1 {
@@ -418,7 +456,7 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.42);
     /* background: rgba(0, 0, 255, 0.097); */
     width: 500px;
     margin-left: -1100px;
-    margin-top: 50px;
+    margin-top: 90px;
 }
 
 .fourteen {
@@ -454,6 +492,8 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.42);
 
 .sixteen {
     margin-left: 20px;
+    margin-top: 20px;
+    z-index: 1;
 }
 
 .sixteen .h2 {
@@ -555,4 +595,5 @@ box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.42);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #d74e87;
 }
