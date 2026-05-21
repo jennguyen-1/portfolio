@@ -716,3 +716,9 @@ overflow-y: hidden;
     font-style: italic;
     font-size: 15px;
 }
+
+@media (max-height:721px) {
+    .outercontainer {
+        overflow-y: auto;
+    }
+}
