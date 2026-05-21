@@ -717,15 +717,8 @@ overflow-y: hidden;
     font-size: 15px;
 }
 
-/* @media (max-height:721px) {
+@media (max-height:721px) {
     .outercontainer {
         overflow-y: auto;
-    }
-} */
-
-@media (max-height: 721px) {
-    .outercontainer{
-        transform-origin: top left;
-        transform: scale(calc(100dvh/721));
     }
 }
