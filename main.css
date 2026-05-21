@@ -80,8 +80,8 @@ a {
 
 .outercontainer {
 display: flex;
-align-items: center;
-height: 100vh;
+align-items: flex-start;
+height: 100dvh;
 overflow-y: hidden;
 }
 
