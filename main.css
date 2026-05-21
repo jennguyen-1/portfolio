@@ -725,6 +725,7 @@ overflow-y: hidden;
 
 @media (max-height: 721px) {
     .outercontainer{
+        transform-origin: top left;
         transform: scale(calc(100dvh/721));
     }
 }
