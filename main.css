@@ -114,7 +114,7 @@ overflow-y: hidden;
 }
 
 .maincontentcontainer {
-    padding-top: 35px;
+    padding-top: 30px;
     padding-bottom: 15px;
     display: flex;
     flex-direction: row;
@@ -717,8 +717,14 @@ overflow-y: hidden;
     font-size: 15px;
 }
 
-@media (max-height:721px) {
+/* @media (max-height:721px) {
     .outercontainer {
         overflow-y: auto;
+    }
+} */
+
+@media (max-height: 721px) {
+    .maincontentcontainer{
+        transform: scale(calc(100dvh/721));
     }
 }
