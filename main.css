@@ -724,7 +724,7 @@ overflow-y: hidden;
 } */
 
 @media (max-height: 721px) {
-    .maincontentcontainer{
+    .outercontainer{
         transform: scale(calc(100dvh/721));
     }
 }
