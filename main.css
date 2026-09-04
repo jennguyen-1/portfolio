@@ -179,23 +179,23 @@ overflow-y: hidden;
 .photoboothcontainer {
     display: flex;
     flex-direction: row;
-    width: 600px;
+    width: 790px;
     background-color: rgb(255, 255, 255);
     position: relative;
 }
 
 
 .photobooth1 {
-    top: 100px;
-    left: 20px;
+    top: 340px;
+    left: 280px;
 }
 .photobooth1 img {
-    width: 280px;
+    width: 200px;
 }
 
 .photobooth2 {
-    left: 315px;
-    top: 50px;
+    left: 530px;
+    top: 200px;
 }
 
 .photobooth2 img {
@@ -203,8 +203,17 @@ overflow-y: hidden;
 }
 
 .photobooth3 {
-    left: 185px;
-    top: 510px;
+    left: 0px;
+    top: 370px;
+}
+
+.photobooth4 {
+    left: 50px;
+    top: 85px;
+}
+
+.photobooth4 video {
+    width: 428px
 }
 
 
