@@ -140,7 +140,7 @@ overflow-y: hidden;
 }
 
 .intro1 {
-    top: 310px;
+    top: 350px;
     left: 160px;
 }
 
@@ -149,21 +149,21 @@ overflow-y: hidden;
 }
 
 .intro2 {
-    top: 60px;
+    top: 140px;
     left: 100px;
     font-family:"ballet";
     font-size: 80px;
-    
+    z-index: 1;
 }
 
 
 .intro3 {
-    top: 525px;
+    top: 565px;
     left: 235px;
 }
 
 .intro4 {
-    top: 210px;
+    top: 290px;
     left: 210px;
 }
 
@@ -174,6 +174,15 @@ overflow-y: hidden;
 
 .intro5 img {
     width: 100px
+}
+
+.intro6 {
+    top: 15px;
+    left: 270px
+}
+
+.intro6 img {
+    width: 80px;
 }
 
 .photoboothcontainer {
