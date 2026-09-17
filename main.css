@@ -123,7 +123,7 @@ overflow-y: hidden;
     height: 721px;
     max-height:721px;
     /* change width when updating site */
-    width: 9200px;
+    width: 10100px;
     overflow-y: hidden;
 }
 
@@ -189,7 +189,6 @@ overflow-y: hidden;
     display: flex;
     flex-direction: row;
     width: 790px;
-    background-color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -197,9 +196,11 @@ overflow-y: hidden;
 .photobooth1 {
     top: 340px;
     left: 280px;
+    z-index: 1;
 }
 .photobooth1 img {
     width: 200px;
+    z-index: 1;
 }
 
 .photobooth2 {
@@ -209,20 +210,32 @@ overflow-y: hidden;
 
 .photobooth2 img {
     width: 200px;
+    z-index: 1;
 }
 
 .photobooth3 {
     left: 0px;
     top: 370px;
+    z-index: 1;
 }
 
 .photobooth4 {
     left: 50px;
     top: 85px;
+    z-index: 1;
 }
 
 .photobooth4 iframe {
    
+}
+
+.photobooth5 {
+    left: 50px;
+    top: 400px;
+}
+
+.photobooth5 img {
+    width: 200px;
 }
 
 
@@ -495,6 +508,47 @@ overflow-y: hidden;
 .d9 {
     left: 150px;
     top: 530px;
+}
+
+.modelcall {
+    display:flex;
+    flex-direction: row;
+    width:600px;
+    position:relative;
+}
+
+.modelcall1 {
+    top: 100px;
+    left: 0px;
+}
+
+.modelcall1 img {
+    width: 250px;
+    
+
+}
+
+.modelcall2 {
+    top: 280px;
+    left: 280px;
+}
+
+.modelcall2 img {
+    width: 250px;
+    
+}
+
+.modelcall3 {
+    top: 0px;
+    left: 400px;
+}
+
+.modelcall3 img {
+    width: 150px;
+}
+
+.modelcall4 {
+    top: 50px;
 }
 
 .lighters {
