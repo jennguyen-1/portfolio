@@ -238,6 +238,37 @@ overflow-y: hidden;
     width: 200px;
 }
 
+.rejewelry {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    position: relative;
+    margin-left: 50px
+
+}
+
+.rejewelry1 {
+    left: 0;
+    top: 70px;
+}
+
+.rejewelry1 img {
+    width: 200px;
+}
+
+.rejewelry2 {
+    left: 0;
+    top: 350px;
+}
+
+.rejewelry2 img {
+    width: 200px;
+}
+
+.rejewelry3 {
+    top: 20px;
+}
+
 
 .a {
     display: flex;
